@@ -1,5 +1,6 @@
 myStorage = window.localStorage;
 
-myStorage.setItem('sam', 'hogan?')
-
+if(!myStorage.getItem('sam')) {
+    myStorage.setItem('sam', 'hogan?')
+}
 console.log(myStorage.getItem('sam'))
